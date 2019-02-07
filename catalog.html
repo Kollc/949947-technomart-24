@@ -11,18 +11,22 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.jpg" width="" height="" alt="Логотип Техномарт">
        </a>
-        <a class="button user-menu-button">
-          Поиск
-        </a>
-        <a class="button user-menu-button">
+
+       <label for="search-field">
+         Поиск
+       </label>
+
+        <input type="search" name="search" id="search-field" >
+        <a href="#" class="button user-menu-button">
           Закладки
         </a>
         <a class="button user-menu-button "href="#" >
           Корзина
         </a>
-        <a class="button user-menu-order" href="#">
-          Заказать
+        <a href="#" class="button user-menu-button-order">
+          Оформить заказ
         </a>
+
       </section>
 
       <section  class="main-header-bottom">
@@ -40,7 +44,7 @@
 
         <div class="personal-area-open">
 
-          <!-- Форма-->
+          <button type="button" name="button-exit-profile">выйти</button>
           <a href="#"
           >Мои заказы
         </a>
@@ -121,11 +125,83 @@
         <b>
           Сортировка:
         </b>
-        <!-- Здесь будет форма -->
+        <button type="button" name="button-sorting-price">по цене</button>
+        <button type="button" name="button-sorting-type">по типу</button>
+        <button type="button" name="button-sorting-functional">по функционалу</button>
         <b>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="result.value=filter.value">
           Фильтр:
         </b>
-        <!-- Здесь будет форма -->
+        <fieldset>
+          <legend>
+            Цена:
+          </legend>
+          <div class="filter-range-price">
+
+            <input name="filter"  type="range" multiple min="0" max="50000" step="1000" value="50">
+          </div>
+          <div class="resulr-range-price-null">
+            <output name="result-null" >0</output>
+          </div>
+          <div class="resulr-range-price">
+            <output name="result" ></output>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Производители:
+          </legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="checkbox-bosch" id="checkbox-bosch" checked>
+              <label for="checkbox-bosch">
+                BOSCH
+              </label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="checkbox-enter" id="checkbox-enter" >
+              <label for="checkbox-enter">
+                ИНТЕРСКОП
+              </label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="checkbox-makita" id="checkbox-makita" checked>
+              <label for="checkbox-makita">
+                MAKITA
+              </label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="checkbox-dewalt" id="checkbox-dewalt" >
+              <label for="checkbox-dewalt">
+                DEWALT
+              </label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="checkbox-hitachi" id="checkbox-hitachi" checked>
+              <label for="checkbox-hitachi">
+                HITACHI
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="radio" name="nutrition-group" id="battery"value="nutrition-battery" checked>
+              <label for="battery">Аккамуляторные</label>
+            </li>
+            <li class="filter-option">
+              <input type="radio" name="nutrition-group" id="networked"value="nutrition-networked">
+              <label for="networked">Сетевые</label>
+            </li>
+          </ul>
+
+        </fieldset>
+        <button type="submit" class="button filter-button">
+        Показать
+       </button>
+      </form>
       </section>
 
       <section class="catalog">
@@ -573,23 +649,23 @@
       </p>
 
       <div class="footer-social">
-  <ul>
-    <li>
-      <a class="social-button" href="#">
-        Вконтакте
-      </a>
-    </li>
-    <li>
-      <a class="social-button" href="#">
-        Фейсбук
-      </a>
-    </li>
-    <li>
-      <a class="social-button" href="#">
-        Инстаграм
-      </a>
-    </li>
-  </ul>
+        <ul>
+          <li>
+            <a class="social-link" href="#">
+              <img src="img/" alt="Техномарт в Вконтакте">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <img src="img/" alt="Техника в фейсбуке">
+            </a>
+          </li>
+          <li>
+            <a class="social-link"  href="#">
+            <img src="img/" alt="Техника в фейсбуке">
+            </a>
+          </li>
+        </ul>
 </div>
 <p class="footer-feedback">
   <b
@@ -610,4 +686,19 @@
     </section>
     </footer>
   </body>
+  <section class="modul-price">
+    <form class="price-item-basket" action="https://echo.htmlacademy.ru" method="post">
+      <p>Товар добавлен в корзину</p>
+      <button type="button" name="checkout" class="links modul-links">
+        Оформить заказ
+      </button>
+      <button type="button" name="continue-shopping" class="button modul-button-price">
+        Продолжить покупки
+      </button>
+
+      <button type="button" name="close" class="modul-close" aria-label="Закрыть всплывающее окно заказа товара">закрыть</button>
+
+    </form>
+
+  </section>
 </html>

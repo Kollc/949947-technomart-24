@@ -12,21 +12,22 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.jpg" width="" height="" alt="Логотип Техномарт">
        </a>
-        <a class="button user-menu-button">
-          Поиск
-        </a>
-        <a class="button user-menu-button">
+       <label for="search-field">
+         Поиск
+       </label>
+
+        <input type="search" name="search" id="search-field">
+        <a href="#" class="button user-menu-button-bookmarks">
           Закладки
         </a>
-        <a class="button user-menu-button "href="#" >
+        <a class="button user-menu-button-basket "href="#" >
           Корзина
         </a>
-        <a class="button user-menu-order" href="#">
-          Заказать
+        <a href="#" class="button user-menu-button-order">
+          Оформить заказ
         </a>
-      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      </section>
       <section  class="main-header-bottom">
         <h1 class="main-page-title">
             Интернет-магазин строительных материалов и инструментов   для ремонта
@@ -41,12 +42,8 @@
       </div>
 
       <div class="personal-area-close">
-        <a class="button main-header-up-button"
-        >Войти
-      </a>
-        <a class="button main-header-bottom-button">
-          Регистрация
-        </a>
+        <button type="button" name="button-exit" class="button main-header-up-button">Войти</button>
+        <button type="button" name="button-registration" class="button main-header-up-button">Регистрация</button>
       </div>
 
       <nav class="main-navigation">
@@ -159,8 +156,12 @@
         </b>
         Настоящие мужские игрушки
         </p>
+        <figure class="slider-content" aria-label="Слайдер">
         <img src="./img/man1.jpg" alt="Демонстрация продукта 1">
         <img src="./img/man2.jpg" alt="Демонстрация продукта 2">
+      </figure>
+      <button class="button gallery-button gallery-button-back" type="button"> <img src="img/" alt="Назад"></button>
+      <button class="button gallery-button gallery-button-next" type="button"><img src="img/" alt="Вперед"></button>
 
       <!--TODO: тут будет слайдер -->
       <a href="catalog.html">
@@ -358,7 +359,23 @@
         Хороший интеренет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-        <!-- Здесь будет форма-->
+        <ul class="service-list" aria-label="Список сервисов">
+          <li class="service-link">
+            <a href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="service-link">
+            <a href="#">
+              Гарантия
+            </a>
+          </li>
+          <li class="service-link">
+            <a href="#">
+              Кредит
+            </a>
+          </li>
+        </ul>
         <b>
           Доставка
         </b>
@@ -425,13 +442,12 @@
         Вы можете  забрать товар сами заехав в наш офис:
       </p>
 
-      <a class="contacs-map">
-        <img src="img/map.png" alt="Местонахождение магазина">
-      </a>
+      <button type="button" name="map" class="button-map" aria-label="открыть  большую карту">
+        <img src="img/map.png" alt="Карта\Местонахождение магазина">
+      </button>
 
-      <a class="links" href="contacts.html">
-        Заблудились?Напишите нам!
-      </a>
+
+      <button type="button" name="button-call-letter" class="links">Заблудились?Напишите нам!</button>
     </section>
 
     </main>
@@ -513,18 +529,18 @@
       <div class="footer-social">
   <ul>
     <li>
-      <a class="social-button" href="#">
-        Вконтакте
+      <a class="social-link" href="#">
+        <img src="img/" alt="Техномарт в Вконтакте">
       </a>
     </li>
     <li>
-      <a class="social-button" href="#">
-        Фейсбук
+      <a class="social-link" href="#">
+        <img src="img/" alt="Техника в фейсбуке">
       </a>
     </li>
     <li>
-      <a class="social-button" href="#">
-        Инстаграм
+      <a class="social-link"  href="#">
+      <img src="img/" alt="Техника в фейсбуке">
       </a>
     </li>
   </ul>
@@ -534,7 +550,7 @@
     Обратная связь:
   </b>
 
-   <a href="">
+   <a href="https://htmlacademy.ru/intensive/htmlcss">
      mail@htmlacademy.ru
    </a>
 </p>
@@ -548,5 +564,36 @@
 </p>
     </section>
     </footer>
+    <section class="all-modul-letter" aria-label="всплывающее окно с возможностью отправить письмо магазину">
+      <form class="modul-letter-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="name-write">
+        Ваше имя:
+      </label>
+      <input class="modul-login-icon-name" type="text" name="name" id="name-write" placeholder="Имя Фамилия" required>
+      <label for="email-write">
+        Ваш email:
+      </label>
+      <input class="modul-login-icon-email" type="text" name="email" id="email-write" placeholder="email@example.com" required>
+      <p>
+        Текст письма
+      </p>
+      <textarea class="modul-letter" name="text-letter" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
+      <input type="supmit" name="supmit-button" value="Отправить" class="modul-submit-letter">
+      <button type="button" name="close" class="modul-close" aria-label="Закрыть всплывающее окно для письма">закрыть</button>
+
+    </form>
+  </section>
+
+  <section class="modul-map">
+
+    <h2 class="visually-hidden">
+          Как до нас добраться
+        </h2>
+        <p>
+          <img src="img/map.jpg"  alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+      <button type="button" name="close" class="modul-close" aria-label="Закрыть карту">закрыть</button>
+
+    </section>
   </body>
 </html>
