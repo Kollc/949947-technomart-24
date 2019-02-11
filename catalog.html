@@ -121,14 +121,22 @@
         <h2 class="visually-hidden">
           Фильтр товаров
         </h2>
+
         <b>
           Сортировка:
         </b>
-        <button type="button" name="button-sorting-price">по цене</button>
-        <button type="button" name="button-sorting-type">по типу</button>
-        <button type="button" name="button-sorting-functional">по функционалу</button>
-        <b>
+
+        <ul class="sorting-list">
+          <li class="sorting-price">по цене</li>
+          <li class="sorting-type">по типу</li>
+          <li class="sorting-functional">по функционалу</li>
+        </ul>
+
+        <!---TODO: здесь будут треугольничики-->
+
+
           <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="result.value=filter.value">
+        <b>
           Фильтр:
         </b>
         <fieldset>
