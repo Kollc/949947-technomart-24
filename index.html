@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт-Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
-      <section class="main-header-up">
+      <div class="main-header-up">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.jpg" width="" height="" alt="Логотип Техномарт">
        </a>
@@ -16,21 +19,24 @@
          Поиск
        </label>
 
-        <input type="search" name="search" id="search-field">
-        <a href="#" class="button user-menu-button-bookmarks">
+        <input type="search" name="search" id="search-field" class="search">
+        <a href="#" class="button-user user-menu-button-bookmarks">
           Закладки
         </a>
-        <a class="button user-menu-button-basket "href="#" >
+        <a class="button-user user-menu-button-basket "href="#" >
           Корзина
         </a>
-        <a href="#" class="button user-menu-button-order">
+        <a href="#" class="button-user user-menu-button-order">
           Оформить заказ
         </a>
 
-      </section>
-      <section  class="main-header-bottom">
+      </div>
+
+      <div  class="main-header-bottom">
         <h1 class="main-page-title">
-            Интернет-магазин строительных материалов и инструментов   для ремонта
+            Интернет-магазин<br>
+            строительных материалов<br>
+            и инструментов   для ремонта
         </h1>
         <div class="main-header-contacts">
           <a href="tel:+7 (812) 555-05-55">
@@ -42,53 +48,53 @@
       </div>
 
       <div class="personal-area-close">
-        <button type="button" name="button-exit" class="button main-header-up-button">Войти</button>
-        <button type="button" name="button-registration" class="button main-header-up-button">Регистрация</button>
+        <button type="button" name="button-exit" class="button-login">Войти</button>
+        <button type="button" name="button-registration" class="button-login">Регистрация</button>
       </div>
 
       <nav class="main-navigation">
-        <ul class="site-navigation">
-            <li class="site-navigation-current">
+        <ul>
+            <li class="main-navigation-point">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li>
+            <li class="main-navigation-point">
               <a href="сompany.html">
                 Компания
               </a>
             </li>
-            <li>
+            <li class="main-navigation-point">
               <a href="catalog.html">
                 Каталог
               </a>
             </li>
-            <li>
+            <li class="main-navigation-point">
               <a href="news.html">
                 Новости
               </a>
             </li>
-            <li>
+            <li class="main-navigation-point">
               <a href="special-offers.html">
                 Спецпредложения
               </a>
             </li>
-            <li>
+            <li class="main-navigation-point">
               <a href="delivery.html">
                 Доставка
               </a>
             </li>
-            <li>
+            <li class="main-navigation-point">
               <a href="contacts.html">
                 Контакты
               </a>
             </li>
         </ul>
       </nav>
-    </section>
+    </div>
     </header>
 
-    <main class="container">
+    <main>
 
       <section class="main-shop">
 
@@ -351,6 +357,9 @@
       </li>
     </ul>
     </section>
+
+
+
     <section class="service">
       <h3>
         Сервисы
@@ -360,20 +369,20 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
         <ul class="service-list" aria-label="Список сервисов">
-          <li class="service-link">
-            <a href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="service-link">
-            <a href="#">
-              Гарантия
-            </a>
-          </li>
-          <li class="service-link">
-            <a href="#">
+          <li class="service-button-list">
+            <button type="button" name="delivery" class="service-button">
               Кредит
-            </a>
+            </button>
+          </li>
+          <li class="service-button-list">
+            <button type="button" name="warranty" class="service-button">
+              Гарантия
+            </button>
+          </li>
+          <li class="service-button-list">
+            <button type="button" name="credit" class="service-button">
+              Кредит
+            </button>
           </li>
         </ul>
         <b>
@@ -388,40 +397,33 @@
     </section>
 
 
+
       <section class="transport-companies">
-      <p>
         <b>
           Компания "Техномарт"
         </b>
-      </p>
       <p>
         Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
         равнодушными любителей сэкономить на гастрабайтерах
       </p>
       <p>
-        Мы поможем доставить ваш товар в самые  отдаленные точки России!
+        Мы поможем доставить ваш товар в самые  отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:
       </p>
       <ul class="transport-companies-list">
         <li>
           <a href="#">
-            <b>
               Деловые линии
-            </b>
           </a>
         </li>
         <li>
           <a href="#">
-            <b>
               Автотрейдинг
-            </b>
           </a>
         </li>
         <li>
           <a href="#">
-            <b>
               ЖелДорЭкспедиция
-            </b>
           </a>
         </li>
       </ul>
@@ -439,11 +441,12 @@
         </b>
       </p>
       <p>
-        Вы можете  забрать товар сами заехав в наш офис:
+        Вы можете  забрать товар сами,<br>
+         заехав в наш офис:
       </p>
 
       <button type="button" name="map" class="button-map" aria-label="открыть  большую карту">
-        <img src="img/map.png" alt="Карта\Местонахождение магазина">
+        <img src="img/map.png" alt="Карта.Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </button>
 
 
@@ -454,41 +457,41 @@
 
     <footer class="main-footer">
 
-      <section class="main-footer-up">
+      <div class="main-footer-up">
 
       <a class="main-footer-logo" href="index.html">
-        <img src="img/logo.jpg" alt="Логотип компании Техномарт" width="" height="" >
+        <img src="img/logo.jpg" alt="Логотип компании Техномарт"  >
       </a>
 
       <div class="main-footer-contacts">
-        <a href="tel:+7 (812) 555-05-55">
+        <a class="tel" href="tel:+7 (812) 555-05-55">
            +7 (812) 555-05-55
          </a>
         г.Санкт-Петербург ,ул.Б.Конюшечная,д.19/8
       </div>
 
       <ul class="main-footer-menu">
-        <li>
-          <a href="company.html">
+        <li class="main-footer-menu-point">
+          <a href="company.html" >
             Компания
           </a>
         </li>
-        <li>
+        <li class="main-footer-menu-point">
           <a href="news.html">
             Новости
           </a>
         </li>
-        <li>
+        <li class="main-footer-menu-point">
           <a href="catalog.html">
             Каталог
           </a>
         </li>
-        <li>
+        <li class="main-footer-menu-point">
           <a href="delivery.html">
             Доставка
           </a>
         </li>
-        <li>
+        <li class="main-footer-menu-point">
           <a href="contacts.html">
             Контакты
           </a>
@@ -496,31 +499,31 @@
       </ul>
 
       <ul class="main-footer-menu-item">
-        <li>
+        <li class="main-footer-menu-item-point">
           <a href="catalog.html">
             Материалы
           </a>
         </li>
-        <li>
+        <li class="main-footer-menu-item-point">
           <a href="catalog.html">
             Техника
           </a>
         </li>
-        <li>
+        <li class="main-footer-menu-item-point">
           <a href="catalog.html">
             Инструмент
           </a>
         </li>
-        <li>
+        <li class="main-footer-menu-item-point">
           <a href="special-offers.html">
             Спецпредложения
           </a>
         </li>
       </ul>
 
-    </section>
+    </div>
 
-    <section class="main-footer-bottom">
+    <div class="main-footer-bottom">
 
       <p class="copyright">
         2010-2017 Компания "Техномарт" Все права защищены
@@ -562,25 +565,24 @@
   htmlacademy.ru
 </a>
 </p>
-    </section>
+</div>
     </footer>
     <section class="all-modul-letter" aria-label="всплывающее окно с возможностью отправить письмо магазину">
       <form class="modul-letter-form" action="https://echo.htmlacademy.ru" method="post">
       <label for="name-write">
         Ваше имя:
       </label>
-      <input class="modul-login-icon-name" type="text" name="name" id="name-write" placeholder="Имя Фамилия" required>
+      <input class="modul-login-icon" type="text" name="name" id="name-write" placeholder="Имя Фамилия" required>
       <label for="email-write">
         Ваш email:
       </label>
-      <input class="modul-login-icon-email" type="text" name="email" id="email-write" placeholder="email@example.com" required>
+      <input class="modul-login-icon" type="text" name="email" id="email-write" placeholder="email@example.com" required>
       <p>
         Текст письма
       </p>
-      <textarea class="modul-letter" name="text-letter" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
-      <input type="supmit" name="supmit-button" value="Отправить" class="modul-submit-letter">
+      <textarea class="modul-login-icon" name="text-letter" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
+      <button type="submit" name="button" class="links">Отправить</button>
       <button type="button" name="close" class="modul-close" aria-label="Закрыть всплывающее окно для письма">закрыть</button>
-
     </form>
   </section>
 

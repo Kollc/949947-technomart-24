@@ -1,0 +1,552 @@
+body
+{
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+ font-size: 14px;
+ line-height: 24px;
+ font-weight: 700;
+ color: #ffffff;
+}
+a
+{
+  text-decoration: none;
+}
+.main-header
+{
+  background-color:#f3f7f9;
+}
+.main-header-up
+{
+  line-height: 18px;
+  font-size: 17px;
+  background-color: #293449;
+  color:#ffffff;
+  font-family: "Cuprum";
+}
+
+
+.main-header-up a
+{
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.search
+{
+  background-color: #293449;
+  border:none;
+}
+.button-user:hover,
+.button-user:focus,
+.search:hover,
+.search:focus
+{
+  background-color: #212a3a;
+}
+.button-user:active
+{
+  background-color:#161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.user-menu-button-order
+{
+  background-color: #63a63e;
+}
+.user-menu-button-order:hover,
+.user-menu-button-order:focus
+{
+  background-color: #5fbb2d;
+}
+.user-menu-button-order:active
+{
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.main-page-title
+{
+  line-height: 23px;
+  font-size: 16px;
+  color: #ee3643;
+  font-family: "Cuprum";
+  font-style: italic;
+}
+.main-header-contacts a
+{
+  line-height: 21px;
+  font-size: 21px;
+  border:3px solid #feffff;
+  color:#ee3643;
+  font-family: "Cuprum";
+}
+.main-header-contacts address
+{
+  line-height: 24px;
+  font-size: 14px;
+  color: #32425c;
+  font-family: "Cuprum";
+}
+.button-login
+{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 21px;
+  font-size: 21px;
+  font-family: "Cuprum";
+  color: #000000;
+  border:none;
+
+
+  background-color: #ffffff;
+}
+.button-login:hover,
+.button-login:focus
+{
+  color:#ee3643;
+}
+.button-login:active
+{
+  color: rgba(0, 0, 0, 0.302);
+}
+
+
+.main-navigation ul
+{
+  line-height: 17px;
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: #ffffff;
+  list-style: none;
+}
+.main-navigation-point
+{
+  background-color: #32425c;
+}
+.main-navigation a
+{
+  color:#ffffff;
+}
+.main-navigation-point:hover,
+.main-navigation-point:focus
+{
+  background-color:#293449;
+}
+.main-navigation-point:active
+{
+  background-color:#1d2739;
+}
+.main-navigation-point a:active
+{
+  color:rgba(255, 255, 255, 0.502);
+}
+
+
+.service
+{
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans";
+  color: #000000;
+
+
+
+  background-color: #f4f8f9;
+}
+.service h3
+{
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: #000000;
+}
+.service-button
+{
+  line-height: 30px;
+  font-size:21px;
+  color: #ffffff;
+  background-color:#32425c;
+  border:none;
+  box-shadow: 0px 0px 0px 1px #293449;
+}
+.service-button-list
+{
+  background-color:#32425c;
+  box-shadow: 0px 0px 0px 1px #293449;
+}
+.service-list
+{
+  list-style:none;
+}
+.service b
+{
+  line-height: 36px;
+  font-size: 36px;
+  font-family: "Cuprum";
+  color: #32425c;
+}
+.transport-companies
+{
+  line-height: 24px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  color: #000000;
+}
+.transport-companies b
+{
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum";
+  color:#000000;
+}
+.transport-companies-list
+{
+  list-style:/*TODO: здесь будут прямые красные линии*/ ;
+}
+.transport-companies a
+{
+  line-height: 20px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color:#000000;
+}
+
+
+.links
+{
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Cuprum";
+  color: #ffffff;
+  background-color: #ee3643;
+  border:none;
+  text-align: center;
+  vertical-align: middle;
+}
+a.links
+{
+  text-align: center;
+  vertical-align: middle;
+  color:#ffffff;
+}
+a.links:hover,
+a.links:focus,
+.links:hover,
+.links:focus
+{
+  background-color: #ca2c37;
+}
+
+a.links:active,
+.links:active
+{
+  background-color: #ba2732;
+  color: rgba(255, 255, 255,0.8);
+}
+
+
+.contacs b
+{
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum";
+  color:#000000;
+
+}
+.contacs
+{
+  line-height: 24px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  color: #000000;
+}
+.main-footer-up
+{
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color:#f3f7f9;
+
+
+
+  background-color: #32425c;
+}
+
+
+.main-footer ul
+{
+  list-style: none;
+}
+.main-footer-menu a
+{
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color:#f3f7f9;
+}
+.main-footer-menu-point a:hover,
+.main-footer-menu-point a:focus
+{
+  text-decoration: underline;
+}
+.main-footer-menu-point a:active
+{
+  color: rgba(241, 245, 247, 0.502);
+  text-decoration: none;
+}
+
+
+.main-footer-contacs
+{
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color:#f3f7f9;
+}
+.tel
+{
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color:#f3f7f9;
+}
+
+
+
+.main-footer-menu-item a
+{
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color: line-height: 24px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color:#ffda96;
+}
+.main-footer-menu-item-point a:hover,
+.main-footer-menu-item-point a:focus
+{
+  text-decoration: underline;
+}
+.main-footer-menu-item-point a:active
+{
+  color: rgba(255, 209, 128, 0.502);
+  text-decoration: none;
+}
+
+
+.main-footer-bottom
+{
+  line-height: 18px;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color:#ffffff;
+
+
+  background-color: #293449;
+}
+
+
+.social-link
+{
+  background-color: #212a3a;
+}
+.social-link:hover,
+.social-link:focus,
+.social-link:active
+{
+  background-color: #ee3643;
+}
+
+
+.footer-feedback a
+{
+  line-height: 18px;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color:#ffd180;
+}
+.footer-developed a
+{
+  line-height: 18px;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color:#ffd180;
+}
+.footer-feedback a:hover,
+.footer-feedback a:focus,
+.footer-developed a:hover,
+.footer-developed a:focus
+{
+  text-decoration: underline;
+}
+.footer-feedback a:active,
+.footer-developed a:active
+{
+  color:#ee3643;
+  text-decoration: none;
+}
+
+
+.all-modul-letter
+{
+  line-height: 18px;
+  font-size: 18px;
+  font-family: "Cuprum";
+  color:#000000;
+
+
+  background-color: #ffffff;
+}
+.modul-login-icon
+{
+  outline: none;
+}
+.modul-login-icon:hover
+{
+  border-color: #b5b5b5;
+}
+.modul-login-icon:focus
+{
+  border-color: #ee3643;
+}
+.modul-submit-letter
+{
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Cuprum";
+  color:#ffffff;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+
+
+  background-color: #ee3643;
+}
+.user-data
+{
+  line-height: 18px;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color:#32425c;
+}
+
+.container
+{
+  line-height: 24px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  color:#000000;
+}
+.open-page a
+{
+  line-height: 18px;
+  font-size: 13px;
+}
+.main-title
+{
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum";
+  color:#32425c;
+  text-transform: uppercase;
+
+
+  background-color: #f2f6f8;
+}
+.filter fieldset
+{
+  border:none;
+
+}
+.filter legend
+{
+  line-height: 30px;
+  font-size: 17px;
+  font-family: "PT Sans";
+  color:#000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.filters ul
+{
+  list-style: none;
+}
+.filter-input
+{
+  line-height:20px;
+  font-size: 15px;
+  font-family: "PT Sans";
+  color: #000000;
+  text-transform: uppercase;
+}
+.filter-input + label:active
+{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-option input + label
+{
+  line-height:20px;
+  font-size: 15px;
+  font-family: "PT Sans";
+  color: #000000;
+  text-transform: uppercase;
+}
+.filter-option input + label:active
+{
+  color: rgba(0, 0, 0, 0.4);
+}
+.button
+{
+  line-height: 18px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  color: #000000;
+  text-transform: uppercase;
+}
+.catalog-list h3
+{
+  line-height: 20px;
+  font-size: 18px;
+  font-family: "PT Sans";
+  color:#000000;
+}
+.catalog-item-title
+{
+  line-height: 20px;
+  font-size: 18px;
+  font-family: "PT Sans";
+  color:#000000;
+  text-transform: uppercase;
+}
+.catalog-item-price-former
+{
+  line-height: 18px;
+  font-size:17px;
+  font-family: "PT Sans";
+  color:#999999;
+}
+.catalog-item-price
+{
+  line-height: 18px;
+  font-size:17px;
+  font-family: "PT Sans";
+  color:#000000;
+}
+.catalog-item-news
+{
+  line-height: 5.13px;
+  font-size: 4.85px;
+  font-family: "PT Sans";
+  color:#999999;
+  text-transform: uppercase;
+}
+.catalog-item:hover,
+.catalog-item-focus
+{
+  box-shadow: 0px 10px 50px 25px rgba(41,52,73,0.5);
+}
