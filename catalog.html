@@ -3,62 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт-Каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header-up">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.jpg" width="" height="" alt="Логотип Техномарт">
-       </a>
+      <div class="container">
+
+        <div class="header-up-grid">
+          <div class="logo-grid">
+        <a href="index.html">
+          <img  class="main-header-logo" src="img/footer-logo-text.png"  alt="Логотип Техномарт">
+        </a>
+        </div>
+
+     <div class="search-grid">
        <label for="search-field">
          Поиск
        </label>
-
         <input type="search" name="search" id="search-field" class="search">
+      </div>
+
+      <div class="bookmarks-grid">
         <a href="#" class="button-user user-menu-button-bookmarks">
           Закладки
         </a>
+      </div>
+
+      <div class="basket-grid">
         <a class="button-user user-menu-button-basket "href="#" >
           Корзина
         </a>
+      </div>
+
+      <div class="order-grid">
         <a href="#" class="button-user user-menu-button-order">
           Оформить заказ
         </a>
-
       </div>
+    </div>
+
+    </div>
+    </div>
 
       <div  class="main-header-bottom">
+        <div class="container">
+          <div class="header-bottom-grid">
         <h1 class="main-page-title">
             Интернет-магазин<br>
             строительных материалов<br>
             и инструментов   для ремонта
         </h1>
+
         <div class="main-header-contacts">
           <a href="tel:+7 (812) 555-05-55">
              +7 (812) 555-05-55
            </a>
-        <address>
+           <p>
           г.Санкт-Петербург. ул.Б.Конюшечная,д.19/8
-        </address>
+        </p>
+
       </div>
 
-      <div class="personal-area-price">
-      <button type="text" name="name-user"></button>
-      <button type="button" name="enter">
-        Войти
-        <!--Вход должен быть картинкой-->
-      </button>
-      <a class="user-data" href="#">
-        Мои заказы
-      </a>
-      <a class="user-data" href="#">
-        Личный кабинет
-      </a>
+      <div class="personal-area-close">
+        <button type="button" name="button-exit" class="button-login">Войти</button>
+        <button type="button" name="button-registration" class="button-login">Регистрация</button>
       </div>
+    </div>
 
       <nav class="main-navigation">
         <ul>
@@ -100,7 +111,9 @@
         </ul>
       </nav>
     </div>
+    </div>
     </header>
+
 
     <main class="container">
       <ul class="open-page">
@@ -120,29 +133,31 @@
           </a>
         </li>
       </ul>
-
-
       <h2 class="main-title">
         Перфораторы
       </h2>
+      <section class="sorting">
+
+      <b>
+        Сортировка:
+      </b>
+
+      <ul class="sorting-list">
+        <li class="sorting-price"><a href="#">по цене</a></li>
+        <li class="sorting-type"><a href="#"> по типу</a></li>
+        <li class="sorting-functional"><a href="#">по функционалу</a></li>
+      </ul>
+
+      <!---TODO: здесь будут треугольничики-->
+        </section>
+
+<div class="catalog-filters-grid">
+
 
       <section class="filters">
         <h2 class="visually-hidden">
           Фильтр товаров
         </h2>
-
-        <b>
-          Сортировка:
-        </b>
-
-        <ul class="sorting-list">
-          <li class="sorting-price"<a href="#">по цене</a></li>
-          <li class="sorting-type"><a href="">по типу</a></li>
-          <li class="sorting-functional"><a href="">по функционалу</a></li>
-        </ul>
-
-        <!---TODO: здесь будут треугольничики-->
-
 
           <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="result.value=filter.value">
         <b>
@@ -221,11 +236,9 @@
       </section>
 
       <section class="catalog">
-
         <h2 class="visually-hidden">
           Список перфораторов
         </h2>
-
         <ul class="catalog-list">
 
           <li class="catalog-item">
@@ -238,7 +251,7 @@
                 </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="./img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000" >
+              <img src="./img/product-1.png" alt="Перфоратор BOSCH BFG 3000" >
             </p>
             <p class="catalog-item-price-former">
               <b>
@@ -271,7 +284,7 @@
                 </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="./img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000" >
+              <img src="./img/product-2.png" alt="Перфоратор BOSCH BFG 6000" >
             </p>
             <p class="catalog-item-price-former">
               <b>
@@ -307,7 +320,7 @@
               NEW
             </p>
             <p class="catalog-item-image">
-              <img src="./img/product-3.jpg" alt="Перфоратор BOSCH BFG 2000" >
+              <img src="./img/product-3.png" alt="Перфоратор BOSCH BFG 2000" >
             </p>
 
           <!-- TODO:это будет использоваться после 6 лекции
@@ -338,7 +351,7 @@
                 </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="./img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000" >
+              <img src="./img/product-1.png" alt="Перфоратор BOSCH BFG 3000" >
             </p>
             <p class="catalog-item-price-former">
               <b>
@@ -374,7 +387,7 @@
               NEW
             </p>
             <p class="catalog-item-image">
-              <img src="./img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000" >
+              <img src="./img/product-2.png" alt="Перфоратор BOSCH BFG 6000" >
             </p>
             <p class="catalog-item-price-former">
               <b>
@@ -407,7 +420,7 @@
                 </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="./img/product-3.jpg" alt="Перфоратор BOSCH BFG 2000" >
+              <img src="./img/product-3.png" alt="Перфоратор BOSCH BFG 2000" >
             </p>
 
             <p class="catalog-item-price-former">
@@ -444,7 +457,7 @@
               NEW
             </p>
             <p class="catalog-item-image">
-              <img src="./img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000" >
+              <img src="./img/product-1.png" alt="Перфоратор BOSCH BFG 3000" >
             </p>
             <p class="catalog-item-price-former">
               <b>
@@ -477,7 +490,7 @@
                 </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="./img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000" >
+              <img src="./img/product-2.png" alt="Перфоратор BOSCH BFG 6000" >
             </p>
             <p class="catalog-item-price-former">
               <b>
@@ -510,7 +523,7 @@
                 </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="./img/product-3.jpg" alt="Перфоратор BOSCH BFG 2000" >
+              <img src="./img/product-3.png" alt="Перфоратор BOSCH BFG 2000" >
             </p>
 
           <!-- TODO:это будет использоваться после 6 лекции
@@ -532,6 +545,9 @@
           </li>
         </ul>
       </section>
+    </div>
+
+
 
        <ul class="pagination-list">
           <li class="pagination-item">
@@ -577,17 +593,14 @@
     <footer class="main-footer">
 
       <div class="main-footer-up">
+      <div class="container">
+        <div class="main-footer-up-grid">
 
-      <a class="main-footer-logo" href="index.html">
-        <img src="img/logo.jpg" alt="Логотип компании Техномарт"  >
+      <div class="main-footer-logo-grid">
+      <a href="index.html">
+        <img class="main-footer-logo" src="img/footer-logo-text.png" alt="Логотип компании Техномарт"  >
       </a>
-
-      <div class="main-footer-contacts">
-        <a class="tel" href="tel:+7 (812) 555-05-55">
-           +7 (812) 555-05-55
-         </a>
-        г.Санкт-Петербург ,ул.Б.Конюшечная,д.19/8
-      </div>
+    </div>
 
       <ul class="main-footer-menu">
         <li class="main-footer-menu-point">
@@ -617,6 +630,13 @@
         </li>
       </ul>
 
+      <div class="main-footer-address">
+          <p>г.Санкт-Петербург ,ул.Б.Конюшечная,д.19/8</p>
+        <a class="tel" href="tel:+7 (812) 555-05-55">
+           +7 (812) 555-05-55
+         </a>
+      </div>
+
       <ul class="main-footer-menu-item">
         <li class="main-footer-menu-item-point">
           <a href="catalog.html">
@@ -639,14 +659,22 @@
           </a>
         </li>
       </ul>
-
     </div>
+  </div>
+</div>
 
-    <div class="main-footer-bottom">
 
+
+
+  <div class="main-footer-bottom">
+    <div class="container">
+      <div class="main-footer-bottom-grid">
+
+        <div class="copyright-grid">
       <p class="copyright">
         2010-2017 Компания "Техномарт" Все права защищены
       </p>
+    </div>
 
       <div class="footer-social">
   <ul>
@@ -667,6 +695,8 @@
     </li>
   </ul>
 </div>
+
+<div class="feedback-grid">
 <p class="footer-feedback">
   <b>
     Обратная связь:
@@ -676,15 +706,22 @@
      mail@htmlacademy.ru
    </a>
 </p>
+</div>
+
+<div class="develop-grid">
 <p class="footer-developed">
   <b>
     Разработано-
   </b>
 <a href="https://htmlacademy.ru/intensive/htmlcss">
   htmlacademy.ru
-</a>
-</p>
-</div>
+      </a>
+    </p>
+  </div>
+
+  </div>
+  </div>
+  </div>
     </footer>
   </body>
   <section class="modul-price">

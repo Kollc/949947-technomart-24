@@ -32,6 +32,15 @@ a
   vertical-align: middle;
   color: #ffffff;
 }
+
+.main-header-up label
+{
+  line-height: 18px;
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: #ffffff;
+}
+
 .search
 {
   background-color: #293449;
@@ -83,7 +92,7 @@ a
   color:#ee3643;
   font-family: "Cuprum";
 }
-.main-header-contacts address
+.main-header-contacts p
 {
   line-height: 24px;
   font-size: 14px;
@@ -155,6 +164,12 @@ a
 
 
   background-color: #f4f8f9;
+
+
+
+
+
+  /*Сетка*/
 }
 .service h3
 {
@@ -248,7 +263,7 @@ a.links:active,
 }
 
 
-.contacs b
+.contacts-map b
 {
   line-height: 30px;
   font-size: 30px;
@@ -256,7 +271,7 @@ a.links:active,
   color:#000000;
 
 }
-.contacs
+.contacts-map
 {
   line-height: 24px;
   font-size: 13px;
@@ -298,8 +313,7 @@ a.links:active,
   text-decoration: none;
 }
 
-
-.main-footer-contacs
+.main-footer-address
 {
   line-height: 24px;
   font-size: 18px;
@@ -313,8 +327,6 @@ a.links:active,
   font-family: "Cuprum";
   color:#f3f7f9;
 }
-
-
 
 .main-footer-menu-item a
 {
@@ -360,7 +372,27 @@ a.links:active,
 {
   background-color: #ee3643;
 }
-
+.copyright
+{
+  line-height: 18px;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color:#ffffff;
+}
+.footer-feedback
+{
+  line-height: 18px;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color:#ffffff;
+}
+.footer-developed
+{
+  line-height: 18px;
+  font-size: 16px;
+  font-family: "Cuprum";
+  color:#ffffff;
+}
 
 .footer-feedback a
 {
@@ -545,8 +577,282 @@ a.links:active,
   color:#999999;
   text-transform: uppercase;
 }
+.catalog-item
+{
+  list-style: none;
+}
 .catalog-item:hover,
 .catalog-item-focus
 {
   box-shadow: 0px 10px 50px 25px rgba(41,52,73,0.5);
+}
+
+
+
+
+
+
+
+/*-----Стили для сеточки-----*/
+
+.container
+{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header-up
+{
+  margin-bottom:45px;
+}
+.main-header-up
+{
+    width:100%;
+}
+.header-up-grid
+{
+  display: flex;
+  flex-direction: row;
+}
+.logo-grid
+{
+  width: 220px;
+  height: 45px;
+  margin-right: 10px;
+}
+.search-grid
+{
+  width:230px;
+  margin-right: 20px;
+
+}
+.bookmarks-grid
+{
+  width: 140px;
+  margin-right:20px;
+}
+,
+.basket-grid
+{
+  width: 140px;
+  margin-right: 10px;
+}
+.order-grid
+{
+  width: 150px;
+  margin-left: auto;
+}
+.main-header-bottom
+{
+
+}
+.header-bottom-grid
+{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+
+}
+.main-page-title
+{
+  margin-left: 50px;
+  margin-right:20px;
+  width: 300px;
+}
+.main-header-contacts
+{
+  width: 300px;
+  margin-left: 20px;
+}
+.personal-area-close
+{
+  width: 300px;
+  margin-right: auto;
+}
+.main-navigation
+{
+  margin-bottom: 65px;
+}
+
+.service
+{
+  margin-bottom: 82px;
+}
+.service-all-grid
+{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 52px;
+}
+.service-list
+{
+  width: 240px;
+  margin-right: 80px;
+}
+.delivery-grid
+{
+  width: 300px;
+}
+.service-grid
+{
+  width: 410px;
+  order:3;
+}
+.grid
+{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 85px;
+}
+
+.transport-companies
+{
+  width: 540px;
+  margin-right: 100px;
+}
+.contacts-map
+{
+  width: 300px;
+  margin-left: auto;
+}
+.main-map
+{
+  width:300px;
+  height: 160px;
+}
+.main-footer-up
+{
+  margin-bottom: 0;
+}
+.main-footer-up-grid
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 53px;
+
+}
+.main-footer-logo-grid
+{
+  width: 220px;
+}
+.main-footer-menu
+{
+  width: 550px;
+  margin-left: auto;
+}
+
+.main-footer-address
+{
+  width: 380px;
+  order:1;
+  flex-grow:0 ;
+}
+.main-footer-menu-item
+{
+  width: 540px;
+  margin-left: auto;
+  order:2;
+  flex-grow: 0;
+}
+
+.main-footer-bottom-grid
+{
+  display: flex;
+  flex-direction: row;
+  padding-top: 35px
+}
+.copyright-grid
+{
+  width: 230px;
+  margin-right: 160px;
+}
+.footer-social
+{
+  width: 150px;
+  margin-right: 100px;
+}
+
+.feedback-grid
+{
+  width: 150px;
+  margin-right: 20px;
+}
+.develop-grid
+{
+  width:140px;
+  margin-right: auto;
+}
+
+.open-page
+{
+  width:380px;
+}
+.main-title
+{
+  width:100%;
+}
+.catalog-filters-grid
+{
+  display:flex;
+  flex-direction: row;
+}
+.filters
+{
+  width: 220px;
+}
+.catalog
+{
+  margin-left: auto;
+}
+.catalog-list
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 700px;
+  padding-left:0;
+}
+.catalog-item {
+  width: 218px;
+  margin-right: 20px;
+  border:1px solid #e5e5e5;
+}
+.catalog-item:nth-child(3n)
+{
+  margin-right: 0;
+}
+.grid-footer-1
+{
+  display: flex;
+flex-basis: 100%;
+flex-grow: 1;
+justify-content: space-between;
+}
+.grid-footer-2
+{
+  display: flex;
+flex-basis: 100%;
+flex-grow: 1;
+justify-content: space-between;
+}
+.main-footer-menu-item,
+.main-footer-menu
+{
+  padding-left: 0;
+}
+.main-footer-logo
+{
+  background-color: #ee3643;
+  background-size:220px 63px;
+  box-shadow: 0px 5px 0px 0px #b52933;
+  /*TODO:  с размером разберусь в следующей лекции*/
+}
+.main-header-logo
+{
+  background-color: #ee3643;
+  background-size:220px 63px;
+  box-shadow: 0px 5px 0px 0px #b52933;
+  /*TODO:  с размером разберусь в следующей лекции*/
 }
