@@ -31,7 +31,7 @@
 
         <div class="basket-grid-catalog">
         <a class="button-user user-menu-button-basket "href="#" >
-          Корзина: 10
+          Корзина
 
           <div class="basket-icon-grid">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
@@ -218,7 +218,7 @@
           Фильтр товаров
         </h2>
 
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="result.value=filter.value">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <b>
           Фильтр:
         </b>
@@ -228,14 +228,15 @@
           </legend>
           <div class="filter-range-price">
 
-            <input name="filter"  type="range" multiple min="0" max="50000" step="1000" value="50">
+            <input name="filter" type="range" multiple min="0" max="50000" step="1000" value="50">
           </div>
-          <div class="resulr-range-price-null">
+          <div class="resulr-range-price">0</div>
+          <!-- <div class="resulr-range-price-null">
             <output name="result-null" >0</output>
           </div>
           <div class="resulr-range-price">
             <output name="result" ></output>
-          </div>
+          </div> -->
         </fieldset>
 
 
@@ -817,6 +818,7 @@
     </div>
     </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 
   <section class="modul-price">

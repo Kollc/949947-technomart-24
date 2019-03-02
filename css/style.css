@@ -15,6 +15,9 @@ a
 .main-header
 {
   background-color:#f3f7f9;
+
+
+
 }
 .main-header-up
 {
@@ -459,10 +462,13 @@ a.links:active,
   font-size: 18px;
   font-family: "Cuprum";
   color:#000000;
-
-
   background-color: #ffffff;
 }
+
+.all-modul-letter.all-modul-letter_hidden {
+  display: none;
+}
+
 .modul-login-icon
 {
   outline: none;
@@ -1305,19 +1311,20 @@ vertical-align: middle;
   padding-left: 10px;
   padding-top: 9px;
 }
+
 .all-modul-letter
 {
-  position: relative;
+  position: fixed;
   width: 622px;
   height: 432px;
   box-shadow: 0px 20px 60px 0px black;
+  background-color: #ffffff;
 
-  /*Временно для отображения модуля*/
-  margin-left: 100px;
-  margin-top:100px;
-  margin-bottom: 100px;
-  border:1px solid black;
+  left: 50%;
+    transform: translate(-311px, -216px);
+    top: 50%;
 }
+
 .all-modul-letter::before
 {
   content: "";
@@ -1364,6 +1371,27 @@ vertical-align: middle;
   padding: 10px 198px;
   background-color: #ee3643;
   border: none;
+}
+.modul-map
+{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 935px;
+  height: 550px;
+  margin-top: -200px;
+  margin-left: -500px;
+}
+.modul-map p
+{
+  margin: 0;
+}
+.modul-map img
+{
+  width:950px;
+  height: 460px;
 
 }
 
@@ -1378,12 +1406,10 @@ vertical-align: middle;
 .basket-grid-catalog a
 {
   position: relative;
-  background-color: #ee3643;
 }
 .basket-icon-grid
 {
   position: absolute;
-  opacity: 0.3;
   left:15px;
   top:12px;
 }
@@ -1740,16 +1766,15 @@ background-repeat: no-repeat;
 }
 .modul-price
 {
-  position: relative;
+  display: none;
+  position: fixed;
   width: 622px;
   height: 282px;
   box-shadow: 0px 20px 60px 0px black;
+  left: 410px;
+  top: 200px;
+  background-color: #ffffff;
 
-  /*Временно для отображения модуля*/
-  margin-left: 100px;
-  margin-top:100px;
-  margin-bottom: 100px;
-  border:1px solid black;
 }
 .modul-price::before
 {
@@ -1762,6 +1787,7 @@ background-repeat: no-repeat;
 
   background-color: #ff5257;
 }
+
 .modul-close-catalog
 {
 
@@ -1769,11 +1795,14 @@ background-repeat: no-repeat;
 
   width: 21px;
   height: 21px;
-
+  cursor: pointer;
   top:16px;
   right: 10px;
-
+  background-image: url('./../img/close.svg');
+  border: 0;
+  background-color: transparent;
 }
+
 
 .modul-price p
 {

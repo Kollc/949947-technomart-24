@@ -502,7 +502,12 @@
             <img class="main-map" src="img/map.png" alt="Карта.Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </a>
 
-          <button type="button" name="button-call-letter" class="links links-map">
+          <button
+            type="button"
+            name="button-call-letter"
+            class="links links-map"
+            id="button-call-letter"
+          >
             Заблудились?Напишите нам!
           </button>
         </section>
@@ -663,7 +668,7 @@
 
 
 
-    <section class="all-modul-letter" aria-label="всплывающее окно с возможностью отправить письмо магазину">
+    <section id="all-modul-letter" class="all-modul-letter all-modul-letter_hidden" aria-label="всплывающее окно с возможностью отправить письмо магазину">
 
       <form class="modul-letter-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="all-modul-letter-grid">
@@ -673,21 +678,21 @@
       <label for="name-write">
         Ваше имя:<br>
       </label>
-      <input class="modul-login-icon" type="text" name="name" id="name-write" placeholder="Имя Фамилия" required>
+      <input class="modul-login-icon" type="text" name="name" id="name-write" placeholder="Имя Фамилия">
     </div>
 
     <div class="modul-email-grid">
       <label for="email-write">
         Ваш email:<br>
       </label>
-      <input class="modul-login-icon" type="text" name="email" id="email-write" placeholder="email@example.com" required>
+      <input class="modul-login-icon" type="text" name="email" id="email-write" placeholder="email@example.com">
     </div>
 
     <div>
       <p>
         Текст письма:
       </p>
-      <textarea class="modul-login-icon" name="text-letter" rows="5" cols="54"   placeholder="В свободной форме" required></textarea>
+      <textarea class="modul-login-icon" name="text-letter" rows="5" cols="54"   placeholder="В свободной форме"></textarea>
     </div>
 
     </div>
@@ -698,7 +703,11 @@
     </div>
 
 
-      <input type="image" name="close" class="modul-close-catalog" aria-label="Закрыть всплывающее окно заказа товара" src="img/close.svg">
+      <button
+        id="modul-close-catalog"
+        class="modul-close-catalog"
+        aria-label="Закрыть всплывающее окно заказа товара"
+      ></button>
 
     </form>
   </section>
@@ -710,14 +719,15 @@
 
     <h2 class="visually-hidden">
           Как до нас добраться
-        </h2>
+    </h2>
         <p>
-          <img src="img/map.jpg"  alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img src="img/map-modul.png"  alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
-      <button type="button" name="close" class="modul-close" aria-label="Закрыть карту">
-        закрыть
-      </button>
+      <input type="image" name="close" class="modul-close-catalog" aria-label="Закрыть всплывающее окно заказа товара" src="img/close.svg">
 
     </section>
+
+  <script src="./js/script.js">
+  </script>
   </body>
 </html>
