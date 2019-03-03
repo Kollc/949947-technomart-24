@@ -19,6 +19,7 @@ a
 
 
 }
+
 .main-header-up
 {
   line-height: 18px;
@@ -248,10 +249,7 @@ a
   font-family: "Cuprum";
   color:#000000;
 }
-.transport-companies-list
-{
-  list-style:/*TODO: здесь будут прямые красные линии*/ ;
-}
+
 .transport-companies a
 {
   line-height: 20px;
@@ -819,12 +817,13 @@ a.links:active,
   width: 700px;
   padding-left:0;
 }
-.catalog-item {
-  max-width: 216px;
+.catalog-item
+ {
+  max-width: 218px;
   max-height:316px;
   margin-right: 20px;
   margin-bottom:20px;;
-  border:1px solid #e5e5e5;
+  outline:1px solid #e5e5e5;
 }
 .catalog-item:nth-child(3n)
 {
@@ -1392,8 +1391,8 @@ vertical-align: middle;
 {
   width:950px;
   height: 460px;
-
 }
+
 
 
 
@@ -1742,7 +1741,8 @@ input[type="radio"].visually-hidden
   position: relative;
 
 }
-.catalog-list-new::before
+.catalog-list-new::before,
+.main-materialy a::before
 {
   content: "";
 
@@ -1751,8 +1751,8 @@ input[type="radio"].visually-hidden
 width: 59px;
 height: 59px;
 
-left:158px;
-top:-2px;
+right: 0;
+top:0;
 
 background-image: url("../img/new.png");
 background-repeat: no-repeat;
@@ -1846,4 +1846,226 @@ background-repeat: no-repeat;
 {
   background-color: #f1f1f1;
   padding: 40px 80px;
+}
+.main-shop b,
+.main-shop-bottom b
+{
+  display: block;
+  line-height: 30px;
+  font-size: 24px;
+  font-family: "Cuprum";
+  font-weight: bold;
+  color:#ffffff;
+
+
+
+  margin: 20px 140px 17px 22px;
+}
+
+.button-prototype
+{
+  background-color: rgba(0,0,0,0.1);
+  width: 135px;
+  height: 38px;
+  border-radius: 2px 2px;
+  margin: 10px 140px 20px 25px;
+}
+
+.button-prototype:hover,
+.button-prototype:focus
+{
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+.button-prototype:active
+{
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+.button-prototype p
+{
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Cuprum";
+  font-weight: normal;
+  color:#ffffff;
+  text-align: center;
+
+  padding-top:10px;
+}
+
+.main-shop ul
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+
+.main-shop a,
+.main-shop-point a
+{
+  display: inline-block;
+  position: relative;
+  height: 123px;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.main-header-bottom
+{
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+
+.main-materialy a
+{
+background-color:#ffbf47;
+margin-left: 0;
+}
+
+.main-materialy a::after
+{
+  content: "";
+
+  position: absolute;
+
+  width: 45px;
+  height: 65px;
+
+  top:30px;
+  right: 43px;
+
+
+  background-image: url("../img/bank.svg");
+  background-repeat: no-repeat;
+}
+
+.main-instruments a
+{
+  background-color: #3bbce3;
+}
+
+.main-instruments a::after
+{
+  content: "";
+
+  position: absolute;
+
+  width: 75px;
+  height: 61px;
+
+  top:33px;
+  right: 28px;
+
+
+  background-image: url("../img/instruments.svg");
+  background-repeat: no-repeat;
+}
+
+.main-construction-equipment a
+{
+  background-color: #dc91d8;
+  margin-right: 0;
+}
+
+.main-construction-equipment a::after
+{
+  content: "";
+
+  position: absolute;
+
+  width: 78px;
+  height: 62px;
+
+  top:31px;
+  right: 31px;
+
+
+  background-image: url("../img/construction.svg");
+  background-repeat: no-repeat;
+}
+
+.discount-grid
+{
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+
+.main-discounts a
+{
+  background-color:#8ed78f;
+  margin-right: 0;
+}
+
+.main-discounts a::after
+{
+  content: "";
+
+  position: absolute;
+
+  width: 59px;
+  height: 72px;
+
+  top:26px;
+  right: 45px;
+
+
+  background-image: url("../img/truck.svg");
+  background-repeat: no-repeat;
+}
+
+.main-delivery a
+{
+  background-color:#ffc047;
+  margin-right: 0;
+
+}
+
+.main-delivery a::after
+{
+  content: "";
+
+  position: absolute;
+
+  width: 78px;
+  height: 63px;
+
+  top:32px;
+  right: 31px;
+
+
+  background-image: url("../img/car-delivery.svg");
+  background-repeat: no-repeat;
+}
+
+
+.main-shop-bottom
+{
+  display: flex;
+}
+
+.main-slider
+{
+  width: 620px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-right: 20px;;
+}
+.main-slider p
+{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+}
+.main-slider figure
+{
+  margin: 0;
 }
