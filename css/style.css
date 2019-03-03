@@ -48,11 +48,11 @@ a
 {
   color:#ee3643
 }
-.user-data a:first-child:hover path
+.user-data svg:first-child:hover path
 {
   fill:#000000;
 }
-.user-data a:first-child:active path
+.user-data svg:first-child:active path
 {
   fill:#c5c5c5;
 }

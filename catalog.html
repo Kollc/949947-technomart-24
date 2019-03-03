@@ -30,7 +30,7 @@
       </div>
 
         <div class="basket-grid-catalog">
-        <a class="button-user user-menu-button-basket "href="#" >
+        <a class="button-user user-menu-button-basket" href="#" >
           Корзина
 
           <div class="basket-icon-grid">
@@ -65,7 +65,7 @@
         </h1>
 
         <div class="main-header-contacts">
-          <a href="tel:+7 (812) 555-05-55">
+          <a href="tel:+7(812)555-05-55">
              +7 (812) 555-05-55
            </a>
            <p>
@@ -76,21 +76,19 @@
 
       <div class="user-data">
 
-        <div class="svg-icon-user-catalog">
           <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+          <svg class="svg-icon-user-catalog" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
             <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415
              1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276
              5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063
-             1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+             1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
           <path xmlns="http://www.w3.org/2000/svg" fill="#c5c5c5"
            d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415
             1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979
             5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063
             1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+            </svg>
           </a>
-        </div>
-
 
         <a href="#">Равшан Джамшутович</a>
 
@@ -103,18 +101,19 @@
         <div class="svg-icon-login-catalog">
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
-              <g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+              <svg fill="#c5c5c5">
+                <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
                 <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057
                 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112
                 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
-              </g>
+              </svg>
             </svg>
-            <g xmlns="http://www.w3.org/2000/svg" fill="#c5c5c5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#c5c5c5">
               <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
               <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057
               1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189
               1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
-            </g>
+            </svg>
           </svg>
 
         </a>
@@ -228,7 +227,7 @@
           </legend>
           <div class="filter-range-price">
 
-            <input name="filter" type="range" multiple min="0" max="50000" step="1000" value="50">
+            <input name="filter" type="range"  min="0" max="50000" step="1000" value="50" >
           </div>
           <div class="resulr-range-price">0</div>
           <!-- <div class="resulr-range-price-null">
@@ -837,7 +836,11 @@
 
     </div>
 
-      <input type="image" name="close" class="modul-close-catalog" aria-label="Закрыть всплывающее окно заказа товара" src="img/close.svg">
+    <button
+      id="modul-close-catalog"
+      class="modul-close-catalog"
+      aria-label="Закрыть всплывающее окно заказа товара"
+    ></button>
 
     </form>
 
