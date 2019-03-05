@@ -1,7 +1,13 @@
+
+
 var buttonCallLetterElemet = document.getElementById('button-call-letter');
 var allModulLetter = document.getElementById('all-modul-letter');
 var allModulLetterCloseButton = document.getElementById('modul-close-catalog');
-var allModulLetterCloseButtonMap = document.getElementById('modul-close-catalog-map');
+
+var linksCallMapElement = document.getElementById('links-call-map');
+var allModulMap = document.getElementById('all-modul-map');
+var allModulMapCloseButton = document.getElementById('modul-close-catalog-map');
+
 
 if (buttonCallLetterElemet) {
   buttonCallLetterElemet.addEventListener('click', function(e) {
@@ -15,13 +21,27 @@ if (allModulLetterCloseButton) {
     allModulLetter.classList.toggle('all-modul-letter_hidden');
   })
 }
-if (allModulLetterCloseButtonMap) {
-  allModulLetterCloseButtonMap.addEventListener('click', function(event) {
+
+//////////////////////////////////////////
+if(linksCallMapElement)
+{
+  linksCallMapElement.addEventListener('click' , function(evnt)
+  {
     event.preventDefault();
-    allModulLetterMap.classList.toggle('all-modul-letter-map_hidden');
+    allModulMap.classList.toggle('all-modul-map_hidden');
   })
 }
-//
+
+if(allModulMapCloseButton)
+{
+  allModulMapCloseButton.addEventListener('click', function(eventt) {
+    event.preventDefault();
+    allModulMap.classList.toggle('all-modul-map_hidden');
+  })
+}
+
+
+////////
 
 var inputRangeElement = document.querySelector('input[type="range"]');
 var resultRangePrice = document.querySelector('.resulr-range-price');
