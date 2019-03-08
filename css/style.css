@@ -92,12 +92,14 @@ a {
 .search:focus {
   background-color: #ffffff;
   color: #000000;
+  transition-duration: 0.5s;
 }
 
 .search:focus+.search-label,
 .search:focus+.search-label path {
   background-color: #ffffff;
   fill: #f26973;
+  transition-duration: 0.5s;
 }
 
 .button-user:hover,
@@ -1211,6 +1213,8 @@ a.links:active,
   left: 50%;
   transform: translate(-460px, -216px);
   top: 50%;
+  animation-name: move-map;
+  animation-duration: 3s;
 }
 
 .all-modul-map p {
@@ -1227,6 +1231,8 @@ a.links:active,
   left: 50%;
   transform: translate(-311px, -216px);
   top: 50%;
+  animation-name: move;
+  animation-duration: 3s;
 }
 
 .all-modul-letter::before {
@@ -1507,7 +1513,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
-  width: 23px;
+  width: 30px;
   height: 23px;
   left: -35px;
   background-image: url("../img/checkbox-on.svg");
@@ -1888,6 +1894,9 @@ input[type="radio"].visually-hidden {
   left: 50%;
   transform: translate(-311px, -216px);
   top: 50%;
+  z-index: 10;
+  animation-name: move;
+  animation-duration: 3s;
 }
 
 .modul-price::before {
@@ -2145,10 +2154,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.catalog-item-buy-grid_hidden {
-  display: block;
-}
-
 .catalog-item-buy-grid {
   display: none;
   margin: 40px 42px 45px 41px;
@@ -2207,11 +2212,11 @@ input[type="radio"].visually-hidden {
   order: -1;
 }
 
-.catalog-item-img_hidden {
+.catalog-item:hover .catalog-item-img {
   display: none;
 }
 
-.catalog-item-buy-grid_hidden {
+.catalog-item:hover .catalog-item-buy-grid {
   display: block;
 }
 
@@ -2239,4 +2244,41 @@ input[type="radio"].visually-hidden {
 .catalog-item-buy .button-buy:hover::before,
 .catalog-item-buy .button-buy:active::before {
   opacity: 1;
+}
+
+.modul-price_hidden {
+  display: block;
+}
+@keyframes move {
+  0% {
+    transform: translate(-311px, -500px);
+  }
+
+  100% {
+    transform: translate(-311px, -216px);
+  }
+}
+
+@keyframes move-map {
+  0% {
+    transform: translate(-460px, -500px);
+  }
+
+  100% {
+    transform: translate(-460px, -216px);
+  }
+}
+
+.all-modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
 }
