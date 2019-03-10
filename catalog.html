@@ -206,12 +206,12 @@
 
           <ul class="sorting-list">
 
-            <li class="sorting-price current"><a href="#">по цене</a></li>
-            <li class="sorting-type"><a href="#"> по типу</a></li>
-            <li class="sorting-functional"><a href="#">по функционалу</a></li>
+            <li class="sorting-price"><a class="current" href="#">по цене</a></li>
+            <li class="sorting-point sorting-type"><a href="#"> по типу</a></li>
+            <li class="sorting-point sorting-functional"><a href="#">по функционалу</a></li>
           </ul>
 
-          <a href="#" class="up current">
+          <a href="#" class="up current-up">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path fill="#231F20" d="M5.5 0L0 10h11z" />
             </svg>
@@ -242,6 +242,7 @@
           </h2>
 
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <div class="price-form">
 
             <fieldset>
               <legend>
@@ -251,14 +252,13 @@
 
                 <input name="filter" type="range" min="0" max="50000" step="1000" value="50">
               </div>
-              <div class="resulr-range-price">0</div>
-              <!-- <div class="resulr-range-price-null">
-                <output name="result-null" >0</output>
-              </div>
-              <div class="resulr-range-price">
-                <output name="result" ></output>
-              </div> -->
+              <div class="resulr-price-block">
+              <div class="resulr-range-price resulr-range-price-first">0</div>
+              <div class="decoration-line"></div>
+              <div class="resulr-range-price resulr-range-price-second">0</div>
+            </div>
             </fieldset>
+          </div>
 
 
             <div class="manufactures-grid">

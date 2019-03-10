@@ -44,13 +44,12 @@ if (allModulMapCloseButton) {
 }
 
 
-//КОД ДЛЯ ВАЛИКА..НЕ ГОТОВЫЙ
+//КОД ДЛЯ БЕГУНКА..НЕ ГОТОВЫЙ
 var inputRangeElement = document.querySelector('input[type="range"]');
-var resultRangePrice = document.querySelector('.resulr-range-price');
+var resultRangePrice = document.querySelector('.resulr-range-price-second');
 
 if (inputRangeElement) {
   inputRangeElement.addEventListener('input', function(event) {
-    console.dir(event.target.value);
 
     if (resultRangePrice) {
       resultRangePrice.innerHTML = event.target.value;
@@ -77,5 +76,22 @@ if (countinuehopping) {
     event.preventDefault();
     // TODO: ДОБАВИТЬ ИЗМЕНЕНИЕ ЦВЕТА КОРЗИНЫ  + ДОБАВЛЕНИ ЕКОЛ-ВА ТОВАРА
     modulPrice.classList.remove('modul-price_hidden')
+  })
+}
+//КОД ДЛЯ СЛАЙДЕРА
+var next = document.querySelector('.gallery-button-next');
+var back = document.querySelector('.gallery-button-back');
+var slide = document.querySelector('.slider-content-2');
+
+if (next) {
+  next.addEventListener('click', function(event) {
+    event.preventDefault();
+    slide.classList.add('slider-content-2_hidden');
+  })
+}
+if (back) {
+  back.addEventListener('click', function(event) {
+    event.preventDefault();
+    slide.classList.remove('slider-content-2_hidden');
   })
 }
