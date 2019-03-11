@@ -44,18 +44,6 @@ if (allModulMapCloseButton) {
 }
 
 
-//КОД ДЛЯ БЕГУНКА..НЕ ГОТОВЫЙ
-var inputRangeElement = document.querySelector('input[type="range"]');
-var resultRangePrice = document.querySelector('.resulr-range-price-second');
-
-if (inputRangeElement) {
-  inputRangeElement.addEventListener('input', function(event) {
-
-    if (resultRangePrice) {
-      resultRangePrice.innerHTML = event.target.value;
-    }
-  })
-}
 //КОД ДЛЯ ПОПАБА ПРАЙС МЕНЮ
 document.addEventListener('click', function(event) {
   if (event.target.className === 'button-buy') {
@@ -93,5 +81,17 @@ if (back) {
   back.addEventListener('click', function(event) {
     event.preventDefault();
     slide.classList.remove('slider-content-2_hidden');
+  })
+}
+
+//КОД ДЛЯ СЛАЦДЕРА СЕРВИСА
+
+var delivery = document.getElementById('delivery');
+var deliverySlide = document.getElementById('delivery-slide');
+if (delivery) {
+  delivery.addEventListener('click', function(event) {
+    event.preventDefault();
+    delivery.classList.add('.service-slide_current';)
+    deliverySlide.classList.add('.slide-1_hidden');
   })
 }
