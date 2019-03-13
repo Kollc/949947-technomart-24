@@ -11,8 +11,9 @@ var allModulMapCloseButton = document.getElementById('modul-close-catalog-map');
 //ПЕРЕМЕННЫЕ ДЛЯ ПОПАБА ПРАЙСА В КАТАЛОГЕ
 var buyItem = document.querySelector('.button-buy');
 var modulPrice = document.querySelector('.modul-price');
-var closePrice = document.querySelector('.modul-close-catalog');
+var closePrice = document.getElementById('modul-close-catalog-price-index');
 var countinuehopping = document.querySelector('.modul-button-price');
+
 
 //КОД ПИСЬМА В INDEX
 if (buttonCallLetterElemet) {
@@ -44,6 +45,7 @@ if (allModulMapCloseButton) {
 }
 
 
+
 //КОД ДЛЯ ПОПАБА ПРАЙС МЕНЮ
 document.addEventListener('click', function(event) {
   if (event.target.className === 'button-buy') {
@@ -62,7 +64,6 @@ if (closePrice) {
 if (countinuehopping) {
   countinuehopping.addEventListener('click', function(event) {
     event.preventDefault();
-    // TODO: ДОБАВИТЬ ИЗМЕНЕНИЕ ЦВЕТА КОРЗИНЫ  + ДОБАВЛЕНИ ЕКОЛ-ВА ТОВАРА
     modulPrice.classList.remove('modul-price_hidden')
   })
 }
@@ -81,17 +82,5 @@ if (back) {
   back.addEventListener('click', function(event) {
     event.preventDefault();
     slide.classList.remove('slider-content-2_hidden');
-  })
-}
-
-//КОД ДЛЯ СЛАЦДЕРА СЕРВИСА
-
-var delivery = document.getElementById('delivery');
-var deliverySlide = document.getElementById('delivery-slide');
-if (delivery) {
-  delivery.addEventListener('click', function(event) {
-    event.preventDefault();
-    delivery.classList.add('.service-slide_current';)
-    deliverySlide.classList.add('.slide-1_hidden');
   })
 }
