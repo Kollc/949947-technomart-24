@@ -14,35 +14,54 @@ var modulPrice = document.querySelector('.modul-price');
 var closePrice = document.getElementById('modul-close-catalog-price-index');
 var countinuehopping = document.querySelector('.modul-button-price');
 
+//ПЕРМЕННЫЕ ДЛЯ СЛАЙДЕРА В INDEX
+var next = document.querySelector('.gallery-button-next');
+var back = document.querySelector('.gallery-button-back');
+var slide = document.querySelector('.slider-content-2');
+
+
 
 //КОД ПИСЬМА В INDEX
-if (buttonCallLetterElemet) {
-  buttonCallLetterElemet.addEventListener('click', function(e) {
-    allModulLetter.classList.toggle('all-modul-letter_hidden');
-  })
-}
+buttonCallLetterElemet.addEventListener('click', function(e) {
+  allModulLetter.classList.add('hidden');
+});
 
-if (allModulLetterCloseButton) {
-  allModulLetterCloseButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    allModulLetter.classList.toggle('all-modul-letter_hidden');
-  })
-}
+allModulLetterCloseButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  allModulLetter.classList.remove('hidden');
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (allModulLetter.classList.contains('hidden')) {
+      allModulLetter.classList.remove('hidden');
+    }
+  }
+});
+
 
 //КОД ДЛЯ КАРТЫ В INDEX
-if (linksCallMapElement) {
-  linksCallMapElement.addEventListener('click', function(evnt) {
-    event.preventDefault();
-    allModulMap.classList.toggle('all-modul-map_hidden');
-  })
-}
+linksCallMapElement.addEventListener('click', function(evnt) {
+  event.preventDefault();
+  allModulMap.classList.add('hidden-map');
+});
 
-if (allModulMapCloseButton) {
-  allModulMapCloseButton.addEventListener('click', function(eventt) {
-    event.preventDefault();
-    allModulMap.classList.toggle('all-modul-map_hidden');
-  })
-}
+
+allModulMapCloseButton.addEventListener('click', function(eventt) {
+  event.preventDefault();
+  allModulMap.classList.remove('hidden-map');
+});
+
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (allModulMap.classList.contains('hidden-map')) {
+      allModulMap.classList.remove('hidden-map');
+    }
+  }
+});
 
 
 
@@ -50,37 +69,42 @@ if (allModulMapCloseButton) {
 document.addEventListener('click', function(event) {
   if (event.target.className === 'button-buy') {
     event.preventDefault();
-    modulPrice.classList.add('modul-price_hidden');
+    modulPrice.classList.add('hidden');
   }
 })
 
-if (closePrice) {
-  closePrice.addEventListener('click', function(event) {
-    event.preventDefault();
-    modulPrice.classList.remove('modul-price_hidden')
-  })
+closePrice.addEventListener('click', function(event) {
+  event.preventDefault();
+  modulPrice.classList.remove('hidden')
+});
 
-}
-if (countinuehopping) {
-  countinuehopping.addEventListener('click', function(event) {
-    event.preventDefault();
-    modulPrice.classList.remove('modul-price_hidden')
-  })
-}
+
+countinuehopping.addEventListener('click', function(event) {
+  event.preventDefault();
+  modulPrice.classList.remove('hidden')
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modulPrice.classList.contains('hidden')) {
+      modulPrice.classList.remove('hidden');
+    }
+  }
+});
+
+
 //КОД ДЛЯ СЛАЙДЕРА
-var next = document.querySelector('.gallery-button-next');
-var back = document.querySelector('.gallery-button-back');
-var slide = document.querySelector('.slider-content-2');
 
 if (next) {
   next.addEventListener('click', function(event) {
     event.preventDefault();
     slide.classList.add('slider-content-2_hidden');
-  })
+  });
 }
 if (back) {
   back.addEventListener('click', function(event) {
     event.preventDefault();
     slide.classList.remove('slider-content-2_hidden');
-  })
+  });
 }

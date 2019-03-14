@@ -445,11 +445,6 @@ a.links:active,
   text-decoration: none;
 }
 
-.all-modul-letter.all-modul-letter_hidden,
-.all-modul-map.all-modul-map_hidden {
-  display: none;
-}
-
 .modul-login-icon {
   outline: none;
 }
@@ -624,6 +619,7 @@ a.links:active,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  flex-wrap: wrap
 }
 
 .header-bottom-grid {
@@ -680,6 +676,10 @@ a.links:active,
 
 .service input[type='radio'] {
   display: none;
+}
+
+.service-slide {
+  margin-bottom: 130px;
 }
 
 .service-slider-btn-1:checked~.service-slider-controls .control-1,
@@ -868,6 +868,14 @@ a.links:active,
 .main-footer-menu {
   width: 550px;
   margin-left: auto;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-footer-address {
@@ -889,6 +897,14 @@ a.links:active,
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-footer-bottom-grid {
@@ -1072,7 +1088,6 @@ a.links:active,
 }
 
 .user-menu-button-order {
-  min-width: 120px;
   padding: 13px 15px;
 }
 
@@ -1339,29 +1354,9 @@ a.links:active,
   background-color: #ba2732;
 }
 
-.main-footer-menu {
-  margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .main-footer-address p {
   margin: 0;
   margin-top: 30px;
-}
-
-.main-footer-menu-item {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .footer-social ul {
@@ -1402,7 +1397,7 @@ a.links:active,
 }
 
 .all-modul-map {
-  ;
+  display: none;
   position: fixed;
   width: 940px;
   height: 445px;
@@ -1414,10 +1409,6 @@ a.links:active,
   -ms-transform: translate(-460px, -216px);
   transform: translate(-460px, -216px);
   top: 50%;
-  -webkit-animation-name: move-map;
-  animation-name: move-map;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
   z-index: 50;
 }
 
@@ -1435,6 +1426,7 @@ a.links:active,
 }
 
 .all-modul-letter {
+  display: none;
   line-height: 18px;
   font-size: 18px;
   font-family: "Cuprum";
@@ -1451,10 +1443,6 @@ a.links:active,
   -ms-transform: translate(-311px, -216px);
   transform: translate(-311px, -216px);
   top: 50%;
-  -webkit-animation-name: move;
-  animation-name: move;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
   z-index: 50;
 }
 
@@ -1505,6 +1493,7 @@ a.links:active,
   padding: 10px 198px;
   background-color: #ee3643;
   border: none;
+  cursor: pointer;
 }
 
 .modul-map {
@@ -2145,10 +2134,6 @@ input[type="radio"].visually-hidden {
   transform: translate(-311px, -216px);
   top: 50%;
   z-index: 50;
-  -webkit-animation-name: move;
-  animation-name: move;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
 }
 
 .modul-price::before {
@@ -2531,8 +2516,16 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.modul-price_hidden {
+.hidden {
   display: block;
+  animation-name: move;
+  animation-duration: 0.8s;
+}
+
+.hidden-map {
+  display: block;
+  animation-name: move-map;
+  animation-duration: 0.8s;
 }
 
 @-webkit-keyframes move {
@@ -2550,7 +2543,15 @@ input[type="radio"].visually-hidden {
 @keyframes move {
   0% {
     -webkit-transform: translate(-311px, -500px);
-    transform: translate(-311px, -500px);
+    transform: translate(-311px, -1000px);
+  }
+
+  70% {
+    transform: translate(-311px, -185px);
+  }
+
+  90% {
+    transform: translate(-311px, -226px);
   }
 
   100% {
@@ -2574,7 +2575,15 @@ input[type="radio"].visually-hidden {
 @keyframes move-map {
   0% {
     -webkit-transform: translate(-460px, -500px);
-    transform: translate(-460px, -500px);
+    transform: translate(-460px, -1000px);
+  }
+
+  70% {
+    transform: translate(-460px, -185px);
+  }
+
+  90% {
+    transform: translate(-460px, -226px);
   }
 
   100% {
