@@ -1494,7 +1494,7 @@ a.links:active,
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 55px 80px 37px 80px;
+  margin: 55px 60px 37px 60px;
 }
 
 .all-modul-letter-grid label {
@@ -2215,16 +2215,17 @@ input[type="radio"].visually-hidden {
 .modul-button-order {
   margin-right: 20px;
   border: none;
+  width: 220px;
+  text-align: center;
+  vertical-align: middle;
   border-radius: 5px 5px;
-  max-width: 220px;
-  padding: 10px 60px;
   color: #ffffff;
   background-color: #ee3643;
 }
 
 .modul-button-price {
   max-width: 220px;
-  padding: 10px 45px;
+  padding: 10px 40px;
   border: none;
   border-radius: 5px 5px;
   background-color: #ffffff;
@@ -2233,6 +2234,8 @@ input[type="radio"].visually-hidden {
 .modul-button-grid {
   background-color: #f1f1f1;
   padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-point,
