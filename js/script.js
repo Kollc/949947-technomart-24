@@ -93,20 +93,21 @@ if (linksCallMapElement) {
     event.preventDefault();
     allModulMap.classList.add('hidden-map');
   });
+}
 
-
+if (allModulMapCloseButton) {
   allModulMapCloseButton.addEventListener('click', function(eventt) {
     event.preventDefault();
     allModulMap.classList.remove('hidden-map');
   });
-
-
-  window.addEventListener("keydown", function(evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (allModulMap.classList.contains('hidden-map')) {
-        allModulMap.classList.remove('hidden-map');
-      }
-    }
-  });
 }
+
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (allModulMap.classList.contains('hidden-map')) {
+      allModulMap.classList.remove('hidden-map');
+    }
+  }
+});
