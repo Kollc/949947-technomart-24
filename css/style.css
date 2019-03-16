@@ -269,7 +269,7 @@ a {
 }
 
 .transport-companies .links,
-.contacts-map button {
+.contacts-map .button-letter-call {
   line-height: 18px;
   font-size: 14px;
   font-family: "Cuprum";
@@ -307,13 +307,6 @@ a.links:active,
   color: #000000;
   margin: 0;
   padding: 0;
-}
-
-.contacts-map {
-  line-height: 24px;
-  font-size: 13px;
-  font-family: "PT Sans";
-  color: #000000;
 }
 
 .main-footer-up {
@@ -619,6 +612,7 @@ a.links:active,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap
 }
 
@@ -835,6 +829,10 @@ a.links:active,
 }
 
 .contacts-map {
+  line-height: 24px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  color: #000000;
   width: 300px;
   margin-left: auto;
 }
@@ -875,6 +873,7 @@ a.links:active,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -904,6 +903,7 @@ a.links:active,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1326,8 +1326,8 @@ a.links:active,
   margin-bottom: 40px;
 }
 
-.links-map {
-  width: 100%;
+.button-letter-call {
+  padding: 10px 63.5px;
 }
 
 .logo-imagen-footer {
@@ -2518,13 +2518,17 @@ input[type="radio"].visually-hidden {
 
 .hidden {
   display: block;
+  -webkit-animation-name: move;
   animation-name: move;
+  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
 }
 
 .hidden-map {
   display: block;
+  -webkit-animation-name: move-map;
   animation-name: move-map;
+  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
 }
 
@@ -2547,10 +2551,12 @@ input[type="radio"].visually-hidden {
   }
 
   70% {
+    -webkit-transform: translate(-311px, -185px);
     transform: translate(-311px, -185px);
   }
 
   90% {
+    -webkit-transform: translate(-311px, -226px);
     transform: translate(-311px, -226px);
   }
 
@@ -2579,10 +2585,12 @@ input[type="radio"].visually-hidden {
   }
 
   70% {
+    -webkit-transform: translate(-460px, -185px);
     transform: translate(-460px, -185px);
   }
 
   90% {
+    -webkit-transform: translate(-460px, -226px);
     transform: translate(-460px, -226px);
   }
 
