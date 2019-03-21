@@ -6,7 +6,7 @@
   <title>HTML Academy: Техномарт-Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize-min.css">
 </head>
 
@@ -100,7 +100,7 @@
         <nav class="main-navigation">
           <ul>
             <li class="main-navigation-point">
-              <a href="index.html">
+              <a class="first-child-menu" href="index.html">
                 Главная
               </a>
             </li>
@@ -130,7 +130,7 @@
               </a>
             </li>
             <li class="main-navigation-point">
-              <a href="contacts.html">
+              <a class="last-child-menu" href="contacts.html">
                 Контакты
               </a>
             </li>
@@ -149,7 +149,7 @@
         </li>
         <li>
           <a href="#">
-            Инструменты
+            Инструмент
           </a>
         </li>
         <li class="open-page-current">
@@ -169,9 +169,9 @@
             Сортировка:
           </p>
           <ul class="sorting-list">
-            <li class="sorting-price"><a class="current" href="#">по цене</a></li>
-            <li class="sorting-point sorting-type"><a href="#"> по типу</a></li>
-            <li class="sorting-point sorting-functional"><a href="#">по функционалу</a></li>
+            <li class="sorting-point"><a class=" sort current" href="#">по цене</a></li>
+            <li class="sorting-point"><a class="sort sorting-type" href="#"> по типу</a></li>
+            <li class="sorting-point"><a class="sort sorting-functional" href="#">по функционалу</a></li>
           </ul>
           <a href="#" class="up current-up">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
@@ -634,7 +634,7 @@
           </div>
           <div class="grid-footer-2">
             <div class="main-footer-address">
-              <p>г.Санкт-Петербург ,ул.Б.Конюшечная,д.19/8</p>
+              <p>г. Санкт-Петербург ,ул. Б. Конюшечная ,д. 19/8</p>
               <a class="tel" href="tel:+7(812)555-05-55">
                 +7 (812) 555-05-55
               </a>

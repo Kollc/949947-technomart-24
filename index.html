@@ -6,7 +6,7 @@
   <title>HTML Academy: Техномарт-Главная</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize-min.css">
 </head>
 
@@ -76,7 +76,7 @@
         <nav class="main-navigation">
           <ul>
             <li class="main-navigation-point">
-              <a href="index.html">
+              <a class="first-child-menu" href="index.html">
                 Главная
               </a>
             </li>
@@ -106,7 +106,7 @@
               </a>
             </li>
             <li class="main-navigation-point">
-              <a href="contacts.html">
+              <a class="last-child-menu" href="contacts.html">
                 Контакты
               </a>
             </li>
@@ -222,7 +222,7 @@
           </a>
         </div>
         <ul class="main-popular-product-list">
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-index">
             <h3>
               <span class="catalog-category-item">
                 Перфоратор BOSCH<br>
@@ -254,7 +254,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-index">
             <h3>
               <span class="catalog-category-item">
                 Перфоратор BOSCH<br>
@@ -287,7 +287,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-index">
             <h3>
               <span class="catalog-category-item">
                 Перфоратор BOSCH<br>
@@ -320,7 +320,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item catalog-list-new">
+          <li class="catalog-item catalog-item-index catalog-list-new">
             <h3>
               <span class="catalog-category-item">
                 Перфоратор BOSCH<br>
@@ -329,7 +329,7 @@
             </h3>
             <img class="catalog-item-img" src="./img/product-1.png" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
             <div class="catalog-price-grid">
-              <p class="catalog-item-price item-without-discount">
+              <p class="catalog-item-price item-without-discount-index">
                 <b>
                   12500 Р.
                 </b>
@@ -349,7 +349,7 @@
         </ul>
       </section>
       <section class="main-popular-manufactures">
-        <div class="head-section">
+        <div class="head-section head-section-popular">
           <h3>
             Популярные производители:
           </h3>
@@ -538,7 +538,7 @@
           </div>
           <div class="grid-footer-2">
             <div class="main-footer-address">
-              <p>г. Санкт-Петербург , ул. Б. Конюшечная , д. 19/8</p>
+              <p>г. Санкт-Петербург, ул. Б. Конюшечная , д. 19/8</p>
               <a class="tel" href="tel:+7(812)555-05-55">
                 +7 (812) 555-05-55
               </a>
@@ -624,22 +624,22 @@
     <form class="modul-letter-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="all-modul-letter-grid">
         <div class="modul-name-grid">
-          <label for="name-write">
+          <p>
             Ваше имя:<br>
-          </label>
+          </p>
           <input class="modul-login-icon" type="text" name="name" id="name-write" placeholder="Имя Фамилия" required>
         </div>
         <div class="modul-email-grid">
-          <label for="email-write">
+          <p>
             Ваш email:<br>
-          </label>
+          </p>
           <input class="modul-login-icon" type="text" name="email" id="email-write" placeholder="email@example.com" required>
         </div>
-        <div>
+        <div class="text-area-grid">
           <p>
             Текст письма:
           </p>
-          <textarea class="modul-login-icon" name="text-letter" rows="5" cols="54" placeholder="В свободной форме" required></textarea>
+          <textarea class="letter-area" name="text-letter" rows="5" cols="54" placeholder="В свободной форме" required></textarea>
         </div>
       </div>
       <div class="modul-button-grid-index">
